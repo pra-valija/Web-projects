@@ -3,414 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTSTRAP WEBSITE</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Bootstrap Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap.min (10).css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body bg-light>
-    <header>
-        <nav class="navbar navbar-light bg-light shadow-sm fixed-top ">
-            <div class="container-lg ">
-                <a class="navbar-brand text-danger fw-bold fs-4" href="#" >WEB PORTFOLIO</a>
-                <div class="dropdown">
-                    <button class="btn btn-secondary btn-danger px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-item" href="#home">Home</a></li>
-                      <li><a class="dropdown-item" href="#about">About</a></li>
-                      <li><a class="dropdown-item" href="#services">Services</a></li>
-                      <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
-                      <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
-                      <li><a class="dropdown-item" href="#contact">Contact</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#" ><span class="text-light">Build</span>Con</a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link " >HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link " >ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link " >SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link " >PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link " >TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link " >CONTACT</a>
+                    </li>
                 </ul>
-                  
+            </div>
         </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        </nav>
-        </header>
-        <section class="home py-5" id="home">
-            <div class="container-lg">
-                <div class="row min-vh-100 align-items-center align-content-center">
-                    <div class="col-md-6 mt-5 mt-md-0 ">
-                        <div class="home-img text-center">
-                            <img src="images/women-03.jpg" class="rounded-circle mw-100" alt="web designer-portfolio">
-                        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/home-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>Your Dream House</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt, obcaecati repellat fugiat aspernatur cumque?</p>
+              <p><a href="#" class="btn btn-warning mt-3" >LEARN MORE</a></p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/home-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Always Dediacted</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt, obcaecati repellat fugiat aspernatur cumque?</p>
+              <p><a href="#" class="btn btn-warning mt-3" >LEARN MORE</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/home-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>True Construction</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt, obcaecati repellat fugiat aspernatur cumque?</p>
+              <p><a href="#" class="btn btn-warning mt-3" >LEARN MORE</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- aboutsection -->
+      <section id="about" class="about section-padding">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="about-img">
+                        <img src="images/about.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-6 mt-5 mt-md-0 order-md-first">
-                        <div class="home-text">
-                            <p class="text-muted mb-1">Hello I'm</p>
-                            <h1 class="text-danger fs-1 fw-bold ">WEB DESIGNER</h1>
-                            <h2 class="fs-4">Prathna Valija</h2>
-                            <p class="text-muted mt-4">A Professional Front-End web-designer, we Provide Modern,Creative and Responsive Websites  </p>
-                       <a href="#portfolio" class="btn btn-danger px-3 mt-3 ">My Work</a> 
-                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>We provide best Quality <br>Services Ever</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum expedita atque ea non voluptatibus recusandae sint eos accusamus nesciunt? Sequi dolorem repudiandae ipsam vitae veniam et, deleniti laboriosam nulla distinctio molestiae consequuntur ut ea magnam odio rem quo iure cumque nam repellat earum laborum quos iusto culpa eligendi! At, numquam?</p>
+                        <a href="" class="btn btn-warning">LEARN MORE</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- about section -->
-        <div class="about  py-5" id="about">
-            <div class="container-lg py-4">
-                <div class="row">
-                    <div class="col-lg-8 justify-content-center">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">About Me</h2>
-                        </div>
-                    </div>
+        </div>
+      </section>
+      <!-- services section -->
+      <section id="services" class="services section-padding">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2>Our Services</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore enim laborum <br> eaque porro explicabo. A, blanditiis! Repudiandae consectetur  ipsa voluptatibus dolore</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                  <i class="bi bi-subtract"></i>
+                  <h3 class="card-title" style="color:white">Best Quality</h3>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non nostrum illum eum, voluptates optio nisi, odit id consequuntur dolor in veniam ipsa quisquam saepe accusantium dolorem animi esse ipsam!</p>
+                  <button class="btn btn-warning">Read More</button>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="about-text">
-                            <h3 class="fs-4 mb-3">I have done projects using these web-languages.</h3>
-                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla eligendi consectetur perspiciatis ullam beatae. Iusto nostrum ipsa recusandae asperiores, officiis quasi expedita voluptas odio tempora alias laboriosam excepturi in.</p>
-                        </div>
-                        <div class="row text-center my-3 text-uppercase">
-                            <div class="col-sm-4">
-                                <div class="fact-item">
-                                    <h4 class="fs-1 fw-bold">100</h4>
-                                    <p class="text-muted">Projects completed</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="fact-item">
-                                    <h4 class="fs-1 fw-bold">90</h4>
-                                    <p class="text-muted">Happy Clients</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="fact-item">
-                                    <h4 class="fs-1 fw-bold">95</h4>
-                                    <p class="text-muted">Positive Reviews</p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="row">
-                            <div class="col-lg-12 d-flex align-items-center">
-                                <a href="#" class="btn btn-danger me-5 px-3">Download CV</a>
-                                <div class="social-links">
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="text-dark me-2"><i class="fab fa-linkedin"></i></a>
-
-                                </div>
-                            </div>
-                         </div>
-                    </div>
-                    <div class="col-md-6 mt-5 mt-md-0">
-                        <div class="skill-item mb-4">
-                            <h3 class="fs-6">Html</h3>
-                            <div class="progress " style="height:5px" >
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                
-                              </div>
-                        </div>
-                <div class="skill-item mb-4">
-                        <h3 class="fs-6">Css</h3>
-                        <div class="progress " style="height:5px" >
-                            <div class="progress-bar bg-danger" role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          <div class="col-12 col-md-12 col-lg-4 mb-3">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-slack"></i>
+                <h3 class="card-title" style="color:white">Sustainability</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non nostrum illum eum, voluptates optio nisi, odit id consequuntur dolor in veniam ipsa quisquam saepe accusantium dolorem animi esse ipsam!</p>
+                <button class="btn btn-warning">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-playstation"></i>
+                <h3 class="card-title" style="color:white">Integrity</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non nostrum illum eum, voluptates optio nisi, odit id consequuntur dolor in veniam ipsa quisquam saepe accusantium dolorem animi esse ipsam!</p>
+                <button class="btn btn-warning">Read More</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                <h2>Our Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Quasi, maiores suscipit </p>
+            </div>
+            </div>
+          </div> 
+          <div class="row mt-3">
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+              <div class="card text-center bg-white pb-2">
+                <div class="card-body text-dark">
+                  <div class="img-area mb-4">
+                    <img src="images/project-1.jpg" alt="" class="img-fluid">
+                  </div>
+                  <h3 class="card-title">Building Make</h3>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum quod aspernatur laboriosam ipsum pariatur suscipit at illo voluptatem reiciendis.</p>
+                 <button class="btn btn-warning">LEARN MORE</button>
                 
-                <div class="skill-item mb-4">
-                    <h3 class="fs-6">Javascript</h3>
-                    <div class="progress " style="height:5px" >
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
                 </div>
-                <div class="skill-item mb-4">
-                    <h3 class="fs-6">Bootstrap</h3>
-                    <div class="progress " style="height:5px" >
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+
                 </div>
-            </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4 mb-3">
+                <div class="card text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                    <div class="img-area mb-4">
+                      <img src="images/project-2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <h3 class="card-title">Building Make</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum quod aspernatur laboriosam ipsum pariatur suscipit at illo voluptatem reiciendis.</p>
+                   <button class="btn btn-warning">LEARN MORE</button>
+          </div>
                 </div>
-            </div>
         </div>
-        <!-- Service section -->
-        <section class="services" id="services">
-            <div class="container-lg py-5">
-                <div class="row py-4 text-center">
-                    <div class="col-lg-8 justify-content-center">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">What I Do</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row  text-center">
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded bg-white">
-                            <div class="icon my-3 fs-2 text-danger">
-                                <i class="fa fa-code"></i>
-                            </div>
-                            <h3 class="fs-5 py-2">Web Development</h3>
-                            <p class="text-muted">My projects using web-languages includes potfolio ,e-Commerce ,Event, Personal and Business  websites.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm  p-4 rounded bg-white">
-                            <div class="icon my-3 fs-2 text-danger">
-                                <i class="fa fa-lightbulb"></i>
-                            </div>
-                            <h3 class="fs-5 py-2">Creative Design</h3>
-                            <p class="text-muted">I ,asure, you to provide latest,fantastic,unique and useful projects. All u can find is here </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="service-item shadow-sm p-4 rounded bg-white">
-                            <div class="icon my-3 fs-2 text-danger">
-                                <i class="fa fa-image "></i>
-                            </div>
-                            <h3 class="fs-5 py-2">Photoshop</h3>
-                            <p class="text-muted">My command on Adobe Photoshop and Illustrator is also good.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-12 col-md-12 col-lg-4 ">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb-4">
+                <img src="images/project-3.jpg" alt="" class="img-fluid">
+              </div>
+              <h3 class="card-title">Building Make</h3>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum quod aspernatur laboriosam ipsum pariatur suscipit at illo voluptatem reiciendis.</p>
+             <button class="btn btn-warning">LEARN MORE</button>
+    </div>
+    </div>
+  </div>
+      </section>
+      <!-- Team Section -->
+      <section id="team" class="team section-padding">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-md-12 mb-3">
+              <div class="section-header text-center pb-5">
+                <h2>Our Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ipsum architecto dolorum doloribus omnis atque et.</p>
+              </div>
             </div>
-        </section>
-        <!-- portfolio section -->
-        <section class="portfolio bg-white py-5" id="portfolio">
-            <div class="container-lg py-4">
-                <div class="row py-4 text-center">
-                    <div class="col-lg-8 justify-content-center">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">Latest Work</h2>
-                        </div>
-                    </div>
+
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/team-1.jpg" alt="" class="img-fluid rounded-circle">
+                  <h3 class="card-title py-2">Jack Wilson</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus amet doloremque molestias nostrum a accusantium ducimus quasi, sint fuga et temporibus dolorem ab, ratione asperiores, officiis autem enim! Omnis.</p>
+                   <p class="socials"></p>
+                  <i class="bi bi-twitter mx-1 text-dark"></i>
+                  <i class="bi bi-facebook mx-1 text-dark"></i>
+                  <i class="bi bi-linkedin mx-1 text-dark"></i>
+                  <i class="bi bi-instagram mx-1 text-dark"></i>
                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/team-1.jpg" alt="" class="img-fluid rounded-circle">
+                  <h3 class="card-title py-2">Henry Wilson</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus amet doloremque molestias nostrum a accusantium ducimus quasi, sint fuga et temporibus dolorem ab, ratione asperiores, officiis autem enim! Omnis.</p>
+                   <p class="socials"></p>
+                  <i class="bi bi-twitter mx-1 text-dark"></i>
+                  <i class="bi bi-facebook mx-1 text-dark"></i>
+                  <i class="bi bi-linkedin mx-1 text-dark"></i>
+                  <i class="bi bi-instagram mx-1 text-dark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/team-3.jpg" alt="" class="img-fluid rounded-circle">
+                  <h3 class="card-title py-2">Lily Peter</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus amet doloremque molestias nostrum a accusantium ducimus quasi, sint fuga et temporibus dolorem ab, ratione asperiores, officiis autem enim! Omnis.</p>
+                   <p class="socials"></p>
+                  <i class="bi bi-twitter mx-1 text-dark"></i>
+                  <i class="bi bi-facebook mx-1 text-dark"></i>
+                  <i class="bi bi-linkedin mx-1 text-dark"></i>
+                  <i class="bi bi-instagram mx-1 text-dark"></i>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-center">
+                <div class="card-body">
+                  <img src="images/team-4.jpg" alt="" class="img-fluid rounded-circle">
+                  <h3 class="card-title py-2">Olivia D'souza</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus amet doloremque molestias nostrum a accusantium ducimus quasi, sint fuga et temporibus dolorem ab, ratione asperiores, officiis autem enim! Omnis.</p>
+                   <p class="socials"></p>
+                  <i class="bi bi-twitter mx-1 text-dark"></i>
+                  <i class="bi bi-facebook mx-1 text-dark"></i>
+                  <i class="bi bi-linkedin mx-1 text-dark"></i>
+                  <i class="bi bi-instagram mx-1 text-dark"></i>
+                </div>
+              </div>
+            </div>
+          
+        
+          </div>
+        </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+          <div class="container">
+            <div class="row mt-3">
+              <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                  <h2>Contact Us</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Nemo saepe quae, suscipit eveniet veniam obcaecati</p>
+                </div>
+              </div>
+            </div>
+            <form>
+            <div class="row m-0 mt-3">
+              <div class="col-md-12 p-0 pt-4 pb-4 m-auto">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/our team (1).jpg" alt="latest project-team" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">Team Section</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input type="text"  class="form-control" required placeholder="Your Full Name">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/app landing page.png" alt="app landing page-latest project" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">App Landing Page</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input type="email"  class="form-control" required placeholder="Your Email Here">
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/our team2 (2).webp" alt="web designers-team" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">Creative team Section</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <textarea  rows="3" required class="form-control" placeholder="Your Query Here"></textarea>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/pricing table.jpg" alt="pricing table-project" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">Toggle pricing table</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/image gallery (3).jpg" alt="web designer-project gallery" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">Bootstrap5 Image Gallery</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="images/filterable image gallery.jpg" alt="filterable image gallery" class="w-100 img-thumbnail">
-                            <h3 class="fs-5 my-2">Filterable image Gallery</h3>
-                            <p> <a href="#" class="mb-4 text-danger text-decoration-none">Live Demo</a></p>
-                        </div>
-                    </div>
+                  </div>
+                  <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
                 </div>
+              </div>
             </div>
+           
+                  </form>
+                  </div>
+                  </div>
+               
+          </div>
         </section>
-        <!-- freelancer available -->
-        <section class="freelancer-available py-5 bg-danger">
-            <div class="container-lg py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <p class="fs-5 text-light">Do you have any projects?</p>
-                        <h2 class="fs-1 text-white mb-4">I'm Available For Freelancer Projects</h2>
-                        <a href="#contact" class="btn btn-outline-light">Hire Me</a>
-                    </div>
-                </div>
+         <!-- <footer> -->
+          <footer class="bg-dark p-2 text-center">
+            <div class="container">
+              <p class="text-white">All Right Reserved @Website Name</p>
             </div>
-        </section>
-        <!-- testimonials -->
-        <section class="testimonials py-5" id="testimonials">
-            <div class="container-lg py-4">
-                <div class="row py-4 text-center">
-                    <div class="col-lg-8 justify-content-center">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">Testimonials</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li  style="list-style-type: none"class="bg-danger active" data-bs-target="#carousel1" data-bs-slide-to="0"></li>
-                              <li  style="list-style-type: none" class="bg-danger" data-bs-target="#carousel1" data-bs-slide-to="1"></li>
-                              <li  style="list-style-type: none" class="bg-danger"data-bs-target="#carousel1" data-bs-slide-to="2"></li>
-                            </ol>
-                        <div class="carousel-inner">
-                        <!-- testi item start -->
-                        <div class="testi-item  carousel-item active bg-white rounded p-4 shadow-sm">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/edited-image3.jpg"  class="img-thumbnail rounded-circle" alt="seo manager profile">
-                             <div class="author ms-3">
-                                <h3 class="mb-1 fs-6">prathna valija</h3>
-                                <p class="text-muted m-0">Creative Designer</p>
-                             </div>
-                            </div>
-                            <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere obcaecati ad dolores, amet architecto quod cum ex natus cumque. Laborum quibusdam consequuntur cupiditate eius cum! Consequuntur cupiditate praesentium animi.</p>
-                            <div class="rating text-danger">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-
-                            </div>
-                        </div>
-                        <!-- testi item end -->
-                        <!-- testi item start -->
-                        <div class="testi-item carousel-item bg-white rounded p-4 shadow-sm">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/edit-image2.jpg"  class="img-thumbnail rounded-circle"  alt="SEO profile">
-                             <div class="author ms-3">
-                                <h3 class="mb-1 fs-6">Muskan shaikh</h3>
-                                <p class="text-muted m-0">SEO Manager</p>
-                             </div>
-                            </div>
-                            <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere obcaecati ad dolores, amet architecto quod cum ex natus cumque. Laborum quibusdam consequuntur cupiditate eius cum! Consequuntur cupiditate praesentium animi.</p>
-                            <div class="rating text-danger">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-
-                            </div>
-                        </div>
-                        <!-- testi item end -->
-                        <!-- testi item start -->
-                        <div class="testi-item  carousel-item bg-white rounded p-4 shadow-sm">
-                            <div class="testi-author-info d-flex align-items-center">
-                                <img src="images/edit-image3.jpg"  class="img-thumbnail rounded-circle" alt="Seo manager profile">
-                             <div class="author ms-3">
-                                <h3 class="mb-1 fs-6">Anjali chawla</h3>
-                                <p class="text-muted m-0">Co-Founder & Designer</p>
-                             </div>
-                            </div>
-                            <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere obcaecati ad dolores, amet architecto quod cum ex natus cumque. Laborum quibusdam consequuntur cupiditate eius cum! Consequuntur cupiditate praesentium animi.</p>
-                            <div class="rating text-danger">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-
-                            </div>
-                        </div>
-                    </div>
-                        <!-- testi item end -->
-                        </div>
-                        </div> 
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- contact section -->
-        <section class="contact py-5" id="contact">
-            <div class="container-lg py-4">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">Contact Me</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="contact-item d-flex mb-3">
-                            <div class="icon fs-4 text-danger">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="text fs-5">
-                                <h3 class="ms-3">Email</h3>
-                                <p class="text-muted">example@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item d-flex mb-3">
-                            <div class="icon fs-4 text-danger">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="text fs-5">
-                                <h3 class="ms-3">Phone</h3>
-                                <p class="text-muted">0333 345****</p>
-                            </div>
-                        </div>
-                        <div class="contact-item d-flex mb-3">
-                            <div class="icon fs-4 text-danger">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-                            <div class="text fs-5">
-                                <h3 class="ms-3">Visit Office</h3>
-                                <p class="text-muted">101 street,New Delhi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="contact-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-lg-6 mb-4">
-                                        <input type="text" placeholder="Your Name"
-                                        class="form-control fs-6 border-0 shadow-sm
-                                        form-control-lg">
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <input type="text" placeholder="Your Email"
-                                        class="form-control fs-6 border-0 shadow-sm
-                                        form-control-lg">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12 mb-4">
-                                        <input type="text" placeholder="Subject"
-                                        class="form-control fs-6 border-0 shadow-sm
-                                        form-control-lg">
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-4">
-                                            <textarea placeholder="Your Message" rows="5"
-                                            class="form-control fs-6 border-0 shadow-sm
-                                            form-control-lg"></textarea>
-                                        </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 mb-4">
-                                               <button type="submit" class="btn btn-danger px-4">Send Message</button>
-                                            </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <footer> -->
-            <footer class="footer border-top py-4 bg-secondary-subtle">
-                <div class="container-lg">
-                  <p class="text-center text-muted m-0 fs-5">&copy; The Web Portfolio </p>
-                </div>
-      
-              </footer>
-
-
+  
+          </footer>
     
 </body>
 </html>
