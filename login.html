@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maru Dryfruits</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                background-color: #f7f7f7;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                max-width: 800px;
+                margin: 20px;
+                background-color: #f7f7f7;
+            }
+            .welcome, .signup {
+                border-radius: 20px;
+                background-color: #c99b4d;
+                color: white;
+                margin: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+                flex: 1;
+                min-width: 200px;
+            }
+            .welcome img {
+                width:330px;
+                height:300px;
+                border-radius: 20px;
+            }
+            .get-started {
+                padding-inline: 80px;
+                padding-block: 15px;
+                border-radius: 30px;
+                outline: none;
+                border: 2px solid #65482c;
+                background-color: white;
+                color: #65482c;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .heading {
+                text-align: center;
+                font-size: 25px;
+                padding: 20px;
+                text-decoration: underline;
+            }
+            .input {
+                border-radius: 20px;
+                outline: none;
+                border: none;
+                width: calc(100% - 40px);
+                margin: 10px 20px;
+                height: 40px;
+                padding: 0 10px;
+            }
+            .signup-button {
+                padding-inline: 12px;
+                padding-block: 5px;
+                border-radius: 30px;
+                outline: none;
+                border: 2px solid #65482c;
+                background-color: white;
+                color: #65482c;
+                font-size: 15px;
+                display: block;
+                margin: 15px auto 0;
+                cursor: pointer;
+            }
+            .social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin: 20px 0;
+            }
+            .social i {
+                border: 2px solid white;
+                padding: 10px;
+                /* border-radius: 50%; */
+                cursor: pointer;
+            }
+            @media (max-width: 768px) {
+                .get-started, .signup-button {
+                    width: calc(100% - 40px);
+                    margin: 15px auto;
+                    padding-inline: 0;
+                }
+                .input {
+                    width: calc(100% - 40px);
+                    margin: 10px auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="welcome">
+                <center><h1>Welcome to maru <br> <span style="color: #65482c;">Dryfruits</span></h1></center>
+                <center><img src="almond-piece-fly-explosion-on-600nw-1645071025.webp" alt="Dryfruits"></center>
+                <p>e're delighted to have you here. At Maru Dryfruits, we offer a premium selection of the finest quality dry fruits and nuts, handpicked to ensure the highest standards. </p>
+                <center><button class="get-started">Get Started</button></center>
+            </div>
+            <div class="signup">
+                <form action="">
+                    <h3 class="heading">Sign Up</h3>
+                    <input type="email" placeholder="Email" class="input"><br>
+                    <input type="password" placeholder="Password" class="input"><br>
+                    <input type="submit" value="Create Account" class="signup-button"><br>
+                    <h3 style="text-align: center; font-size: 14px;">Already have an account? <span>Sign In</span></h3>
+                    <h2 style="color: #65482c; text-align: center; font-weight: bold; margin: 40px 0;">OR CONTINUE WITH</h2>
+                    <div class="social">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <style>
+      body{
+        padding: 25px;
+      }
+        .box{
+            width: 520px;
+            height: 600px;
+            /* margin-top: 20px; */
+            margin: auto;
+            border-radius: 20px;
+            border:2px solid black;
+        }
+        h2{
+            text-align: center;
+            color: #d3ab68;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        input{
+          width: 400px;
+          height: 30px;
+          margin-bottom: 10px;
+          /* margin-left: 30px; */
+          margin-top: 12px;
+          border: 2px solid #d3ab68;
+        }
+        textarea{
+          width: 390px;
+          border: 2px solid #d3ab68;
+
+        }
+        .btn{
+          background-color: #d3ab68;
+          width: 330px;
+          color: white;
+        }
+        .btn:hover{
+          color: #886425;
+          font-weight: bold;
+
+        }
+        .button{
+          width: 100px;
+          margin-left: 200px;
+          margin-top: 40px;
+          box-shadow: 0px 0px 8px #ecb555,
+          0px 0px 10px #ecb555,
+          0px 0px 12px #ecb555;
+        }
+        .button:hover{
+          background-color: #d3ab68;
+          transform: scale(1.4,1.4);
+          color: white;
+        }
+        
+    </style>
+    <div class="box">
+    <h2>Order Details </h2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product:<input type="text" style="width:200px;" id="product"   placeholder="Enter the product name" id="product">
+    <input type="number"  placeholder="Qunatity/kg" style="width:200px;"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="price" id="price"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name:&nbsp;&nbsp; <input type="text" style="width:200px;" id="name" placeholder="first name">
+    <input type="text" id="" placeholder="Last  name" style="width:200px;"><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;&nbsp;&nbsp; <input type="email" id="email" ><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: &nbsp;&nbsp;<input type="number" id="" style="margin-bottom: 15px;"><br>
+    &nbsp;&nbsp;&nbsp;Address:&nbsp;&nbsp; <textarea name="" id="address" rows="3" style="width: 400px;"></textarea><br>
+    &nbsp;&nbsp;&nbsp;A/c  Number:&nbsp;&nbsp;&nbsp;<input type="number" id="ac" style="width: 370px;margin-bottom: 20px;"><br>
+    <div class="dropdown">
+      &nbsp;&nbsp; Payment Method:&nbsp;&nbsp;<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Select
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">EasyPaisa</a></li>
+          <li><a class="dropdown-item" href="#">BAnk Account</a></li>
+          <li><a class="dropdown-item" href="#">Jazzcash</a></li>
+        </ul>
+      </div>
+      <input type="submit" value="Order Now" class="button" onclick="p()">
+
+
+
+
+</div>
+</body>
+</html>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
